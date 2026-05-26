@@ -1485,21 +1485,54 @@ footer {
           <i class="fas fa-arrow-right c-arr"></i>
         </a>
       </div>
-      <div class="reveal rd2">
-        <div class="contact-form">
-          <div class="form-row">
-            <div class="form-grp"><label>Name</label><input type="text" id="fn" placeholder="name"/></div>
-            <div class="form-grp"><label>Email</label><input type="email" id="fe" placeholder="name@example.com"/></div>
-          </div>
-          <div class="form-grp"><label>Subject</label><input type="text" id="fs" placeholder="Internship Opportunity"/></div>
-          <div class="form-grp"><label>Message</label><textarea id="fm" placeholder="I'd love to discuss…"></textarea></div>
-          <button class="form-submit" onclick="sendMsg()"><i class="fas fa-paper-plane"></i> Transmit Message</button>
-          <div class="form-msg" id="fmsg"></div>
+     
         </div>
       </div>
-    </div>
+<div class="reveal rd2">
+  <div class="contact-form">
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="be38dd4b-84c0-4d18-be48-14e3d296574c">
+
+      <div class="form-row">
+        <div class="form-grp">
+          <label>Name</label>
+          <input type="text" name="name" placeholder="name" required>
+        </div>
+
+        <div class="form-grp">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="name@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-grp">
+        <label>Subject</label>
+        <input type="text" name="subject" placeholder="Internship Opportunity">
+      </div>
+
+      <div class="form-grp">
+        <label>Message</label>
+        <textarea name="message" placeholder="I'd love to discuss…" required></textarea>
+      </div>
+
+      <button type="submit" class="form-submit">
+        <i class="fas fa-paper-plane"></i>
+        Transmit Message
+      </button>
+
+    </form>
+
   </div>
+</div>
 </section>
+
+
+
+   
+
+   
 
 <!-- ═══════ FOOTER ═══════ -->
 <footer>
