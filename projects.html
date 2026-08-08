@@ -27,6 +27,48 @@
     </nav>
   </div>
 </header>
+
+
+<main class="sheet">
+
+  <section style="padding: 56px 0 40px; border-bottom: 1px solid var(--line-soft);">
+    <div class="leader"><span class="dot"></span><span class="tag">Sheet 03 — Projects</span><span class="rule"></span></div>
+    <h1 style="font-family: var(--f-display); font-size: clamp(28px,4vw,42px); margin: 0 0 14px; color: var(--paper);">Selected Builds</h1>
+    <p style="color: var(--paper-dim); max-width: 62ch; font-size: 16px;">Six+ projects spanning production full-stack software, applied machine learning, interactive learning tools, and database design — each with source and, where deployed, a live build.</p>
+  </section>
+
+  <section class="section" style="padding-top: 48px;">
+
+    <!-- 01 — POS System -->
+    <div class="project-card">
+      <div class="project-head">
+        <span class="pnum">01</span>
+        <h3>LumenSoft Point of Sale (POS) System</h3>
+        <span class="project-status">Live</span>
+      </div>
+      <div class="project-body">
+        <div>
+          <p>A production point-of-sale application built during my internship at LumenSoft Technologies. Automates checkout, tracks inventory in real time, manages salesperson accounts, and generates sales analytics — with a React front end and an ASP.NET Core backend on SQL Server.</p>
+          <ul>
+            <li>Dual admin / salesperson panels with independent, non-colliding sessions</li>
+            <li>Role-based route guarding to keep panels isolated and secure</li>
+            <li>Fast POS checkout with product search, autocomplete, and receipt generation</li>
+            <li>Full CRUD for products and salesperson records, backed by REST APIs</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">ASP.NET Core</span>
+            <span class="chip">SQL Server</span><span class="chip">Bootstrap 5</span><span class="chip">Entity Framework</span>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://pos.sses.dev/" target="_blank" rel="noopener">Live Demo <span class="arrow">→</span></a>
+            <a class="btn" href="https://github.com/saadsarfraz438/POS-System" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
 </body>
 </html>
 
