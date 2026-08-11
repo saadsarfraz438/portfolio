@@ -18,3 +18,17 @@ portfolio/
 │   └── main.js         Mobile nav toggle, active-link highlighting, copy-to-clipboard
 └── README.md
 ```
+## Running it
+
+No build step — it's plain HTML/CSS/JS. Just open `index.html` in a browser.
+
+```
+Clone git repositry
+cd portfolio
+python3 -m http.server 8000
+```
+
+## Deploying
+
+i will Push the `portfolio/` folder to GitHub Pages, Vercel, or Netlify as a static
+site.
