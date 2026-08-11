@@ -203,3 +203,36 @@ img { max-width: 100%; display: block; }
   font-family: var(--f-data);
   cursor: pointer;
 }
+
+/* ---- buttons (no bare links anywhere in body copy) --------------------- */
+.btn {
+  font-family: var(--f-data);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 20px;
+  border: 1px solid var(--line);
+  color: var(--paper);
+  background: var(--navy-panel);
+  cursor: pointer;
+  transition: border-color .15s ease, transform .12s ease, background .15s ease, color .15s ease;
+  white-space: nowrap;
+}
+.btn:hover { border-color: var(--cyan); color: var(--cyan); transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn-primary {
+  background: var(--cyan);
+  border-color: var(--cyan);
+  color: var(--navy-deep);
+  font-weight: 700;
+}
+.btn-primary:hover { background: var(--paper); border-color: var(--paper); color: var(--navy-deep); }
+.btn-ghost { background: transparent; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn .arrow { transition: transform .15s ease; }
+.btn:hover .arrow { transform: translateX(3px); }
+
