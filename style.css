@@ -47,3 +47,50 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+
+::selection { background: var(--cyan); color: var(--navy-deep); }
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+/* ---- corner crop marks on every sheet --------------------------------- */
+.sheet {
+  position: relative;
+  max-width: var(--sheet-max);
+  margin: 0 auto;
+  padding: 0 32px;
+  width: 100%;
+  flex: 1;
+}
+
+.sheet::before,
+.sheet::after {
+  content: '';
+  position: fixed;
+  width: 22px;
+  height: 22px;
+  top: 18px;
+  border-top: 1.5px solid var(--line);
+  pointer-events: none;
+  z-index: 5;
+}
+.sheet::before { left: 18px; border-left: 1.5px solid var(--line); }
+.sheet::after  { right: 18px; border-right: 1.5px solid var(--line); }
+
+.crop-bl, .crop-br {
+  position: fixed;
+  width: 22px;
+  height: 22px;
+  bottom: 92px;
+  border-bottom: 1.5px solid var(--line);
+  pointer-events: none;
+  z-index: 5;
+}
+.crop-bl { left: 18px; border-left: 1.5px solid var(--line); }
+.crop-br { right: 18px; border-right: 1.5px solid var(--line); }
+
