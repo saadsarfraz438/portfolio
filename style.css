@@ -94,3 +94,32 @@ img { max-width: 100%; display: block; }
 .crop-bl { left: 18px; border-left: 1.5px solid var(--line); }
 .crop-br { right: 18px; border-right: 1.5px solid var(--line); }
 
+/* ---- eyebrow / annotation labels --------------------------------------- */
+.tag {
+  font-family: var(--f-data);
+  font-size: 11.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cyan);
+}
+
+.leader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 10px;
+}
+.leader .dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 0 3px var(--line-soft);
+  flex-shrink: 0;
+}
+.leader .rule {
+  height: 1px;
+  background: var(--line);
+  flex: 1;
+}
+
+/
