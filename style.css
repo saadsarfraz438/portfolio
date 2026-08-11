@@ -22,3 +22,28 @@
 
   --sheet-max: 1180px;
 }
+
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(var(--navy-deep), var(--navy-deep)),
+    repeating-linear-gradient(0deg, var(--line-softer) 0 1px, transparent 1px 88px),
+    repeating-linear-gradient(90deg, var(--line-softer) 0 1px, transparent 1px 88px);
+  color: var(--paper);
+  font-family: var(--f-body);
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
