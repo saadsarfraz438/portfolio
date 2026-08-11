@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* ---- palette -------------------------------------------------------- */
+  --navy-deep:   #081726;
+  --navy:        #0d2038;
+  --navy-panel:  #102846;
+  --line:        #2e5c86;
+  --line-soft:   rgba(95, 170, 212, 0.16);
+  --line-softer: rgba(95, 170, 212, 0.08);
+  --cyan:        #5fd6d6;
+  --cyan-dim:    #3a9ba0;
+  --amber:       #f2a93b;
+  --paper:       #eaf2f8;
+  --paper-dim:   #93aec7;
+  --paper-faint: #5b7794;
+
+  /* ---- type ------------------------------------------------------------ */
+  --f-display: 'Space Mono', 'IBM Plex Mono', monospace;
+  --f-body:    'IBM Plex Sans', -apple-system, sans-serif;
+  --f-data:    'IBM Plex Mono', monospace;
+
+  --sheet-max: 1180px;
+}
