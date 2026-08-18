@@ -511,3 +511,34 @@ button.contact-card { font: inherit; width: 100%; }
   margin-top: 10px;
   height: 14px;
 }
+
+/* ---- title block (footer signature) --------------------------------------- */
+.titleblock {
+  border-top: 1px solid var(--line-soft);
+  margin-top: auto;
+}
+.titleblock-inner {
+  max-width: var(--sheet-max);
+  margin: 0 auto;
+  padding: 20px 32px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.tb-cell {
+  padding: 0 16px;
+  border-left: 1px solid var(--line-soft);
+}
+.tb-cell:first-child { border-left: none; padding-left: 0; }
+.tb-cell .k {
+  font-family: var(--f-data);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--paper-faint);
+  margin-bottom: 4px;
+}
+.tb-cell .v {
+  font-family: var(--f-data);
+  font-size: 12px;
+  color: var(--paper-dim);
+}
