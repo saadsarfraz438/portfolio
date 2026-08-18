@@ -306,3 +306,30 @@ img { max-width: 100%; display: block; }
 .spec-row .k { color: var(--paper-faint); }
 .spec-row .v { color: var(--paper); text-align: right; }
 
+
+/* ---- stat strip ------------------------------------------------------- */
+.stat-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid var(--line-soft);
+  border-top: none;
+}
+.stat-cell {
+  padding: 26px 22px;
+  border-left: 1px solid var(--line-soft);
+}
+.stat-cell:first-child { border-left: none; }
+.stat-cell .num {
+  font-family: var(--f-display);
+  font-size: 30px;
+  color: var(--cyan);
+  line-height: 1;
+}
+.stat-cell .label {
+  margin-top: 8px;
+  font-family: var(--f-data);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper-dim);
+}
