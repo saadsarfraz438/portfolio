@@ -423,3 +423,10 @@ img { max-width: 100%; display: block; }
 .project-aside { border-left: 1px dashed var(--line-soft); padding-left: 24px; }
 .project-aside .k { font-family: var(--f-data); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper-faint); margin: 14px 0 6px; }
 .project-aside .k:first-child { margin-top: 0; }
+
+/* ---- skills bars ----------------------------------------------------------- */
+.skillbar { margin-bottom: 18px; }
+.skillbar .row { display: flex; justify-content: space-between; font-family: var(--f-data); font-size: 12.5px; margin-bottom: 8px; }
+.skillbar .row .pct { color: var(--cyan); }
+.skillbar .track { height: 6px; background: var(--line-softer); position: relative; overflow: hidden; }
+.skillbar .fill { height: 100%; background: linear-gradient(90deg, var(--cyan-dim), var(--cyan)); }
