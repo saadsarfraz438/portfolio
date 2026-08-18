@@ -393,3 +393,33 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--cyan-dim);
   padding: 4px 9px;
 }
+
+
+/* ---- project cards ------------------------------------------------------- */
+.project-card { border: 1px solid var(--line-soft); background: var(--navy-panel); margin-bottom: 22px; }
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  border-bottom: 1px dashed var(--line-soft);
+}
+.project-head .pnum { font-family: var(--f-data); color: var(--cyan-dim); font-size: 13px; }
+.project-head h3 { font-family: var(--f-display); font-size: 18px; margin: 0; color: var(--paper); flex: 1; }
+.project-status {
+  font-family: var(--f-data);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  color: var(--paper-dim);
+}
+.project-body { padding: 22px 24px 24px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 28px; }
+.project-body p { color: var(--paper-dim); font-size: 14.5px; margin: 0 0 16px; }
+.project-body ul { margin: 0 0 18px; padding-left: 18px; color: var(--paper-dim); font-size: 14px; }
+.project-body ul li { margin-bottom: 5px; }
+.project-aside { border-left: 1px dashed var(--line-soft); padding-left: 24px; }
+.project-aside .k { font-family: var(--f-data); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--paper-faint); margin: 14px 0 6px; }
+.project-aside .k:first-child { margin-top: 0; }
