@@ -430,3 +430,28 @@ img { max-width: 100%; display: block; }
 .skillbar .row .pct { color: var(--cyan); }
 .skillbar .track { height: 6px; background: var(--line-softer); position: relative; overflow: hidden; }
 .skillbar .fill { height: 100%; background: linear-gradient(90deg, var(--cyan-dim), var(--cyan)); }
+
+/* ---- timeline (goals) -------------------------------------------------- */
+.timeline { position: relative; padding-left: 34px; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px; top: 6px; bottom: 6px;
+  width: 1px;
+  background: var(--line);
+}
+.tl-item { position: relative; padding-bottom: 40px; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -34px; top: 4px;
+  width: 11px; height: 11px;
+  border: 1.5px solid var(--cyan);
+  background: var(--navy-deep);
+}
+.tl-item.is-current::before { background: var(--cyan); }
+.tl-head { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+.tl-status { font-family: var(--f-data); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); }
+.tl-item h3 { font-family: var(--f-display); font-size: 18px; margin: 0; color: var(--paper); }
+.tl-item p { color: var(--paper-dim); font-size: 14.5px; max-width: 62ch; margin: 0 0 14px; }
