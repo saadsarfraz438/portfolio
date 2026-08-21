@@ -15,3 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
       a.addEventListener('click', () => links.classList.remove('is-open'));
     });
   }
+  
+// Mark active nav link based on current file name
+  const current = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.navlinks a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === current) a.classList.add('is-active');
+  });
